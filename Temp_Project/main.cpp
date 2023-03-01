@@ -16,6 +16,8 @@ public:
         
         tmp_obj->next = *head;
         *head = tmp_obj;
+        
+        return;
     }
 
     static void insertRight(Node** head, std::string data)
@@ -95,6 +97,7 @@ public:
             std::cout << iterator->data << std::endl;
             iterator = iterator->next;
         }
+        return;
     }
 };
 
